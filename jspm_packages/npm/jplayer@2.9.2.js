@@ -1,0 +1,1 @@
+module.exports = require("npm:jplayer@2.9.2/dist/jplayer/jquery.jplayer.js");

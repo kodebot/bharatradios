@@ -1,0 +1,11 @@
+MultipleErrors: C:/Users/vmani/AppData/Local/.jspm/packages/npm/syntax-error@1.1.4/example/src.js:5:30: Unexpected token res
+C:/Users/vmani/AppData/Local/.jspm/packages/npm/syntax-error@1.1.4/example/src.js:5:33: Unexpected token .
+C:/Users/vmani/AppData/Local/.jspm/packages/npm/syntax-error@1.1.4/example/src.js:5:34: Semi-colon expected
+C:/Users/vmani/AppData/Local/.jspm/packages/npm/syntax-error@1.1.4/example/src.js:6:9: Unexpected reserved word else
+C:/Users/vmani/AppData/Local/.jspm/packages/npm/syntax-error@1.1.4/example/src.js:6:14: Semi-colon expected
+
+MultipleErrors: C:/Users/vmani/AppData/Local/.jspm/packages/npm/syntax-error@1.1.4/test/sources/check.js:5:30: Unexpected token res
+C:/Users/vmani/AppData/Local/.jspm/packages/npm/syntax-error@1.1.4/test/sources/check.js:5:33: Unexpected token .
+C:/Users/vmani/AppData/Local/.jspm/packages/npm/syntax-error@1.1.4/test/sources/check.js:5:34: Semi-colon expected
+C:/Users/vmani/AppData/Local/.jspm/packages/npm/syntax-error@1.1.4/test/sources/check.js:6:9: Unexpected reserved word else
+C:/Users/vmani/AppData/Local/.jspm/packages/npm/syntax-error@1.1.4/test/sources/check.js:6:14: Semi-colon expected
