@@ -1,7 +1,3 @@
 node_modules
-<<<<<<< HEAD
-=======
 jspm_packages
-app/**/*.js
-app/**/*.js.map
->>>>>>> reactjs
+!jspm_packages/npm/simple-line-icons@2.2.3/fonts/Simple-Line-Icons.ttf
