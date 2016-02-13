@@ -1,15 +1,18 @@
-System.register(["angular2/platform/browser", "./shell/shell.component"], function(exports_1) {
-    var browser_1, shell_component_1;
+System.register(["../jspm_packages/github/twbs/bootstrap@3.3.6/css/bootstrap.css!", "../jspm_packages/npm/animate.css@3.4.0//animate.css!", "../jspm_packages/npm/font-awesome@4.5.0/css/font-awesome.css!", "../jspm_packages/npm/simple-line-icons@2.2.3/css/simple-line-icons.css!", "../assets/css/font.css!", "../assets/css/jplayer.flat.css!", "../assets/css/app.css!", "../assets/css/styles.css!", "bootstrap", "./shell/shell.component"], function(exports_1) {
+    "use strict";
     return {
         setters:[
-            function (browser_1_1) {
-                browser_1 = browser_1_1;
-            },
-            function (shell_component_1_1) {
-                shell_component_1 = shell_component_1_1;
-            }],
+            function (_1) {},
+            function (_2) {},
+            function (_3) {},
+            function (_4) {},
+            function (_5) {},
+            function (_6) {},
+            function (_7) {},
+            function (_8) {},
+            function (_9) {},
+            function (_10) {}],
         execute: function() {
-            browser_1.bootstrap(shell_component_1.ShellComponent);
         }
     }
 });
