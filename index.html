@@ -1,12 +1,10 @@
-<!doctype html>
- <html>
- <head>
- <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Listen to you favourite Hindi, Tamil and Telugu radios.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+<!DOCTYPE html>
+<html lang="en" class="app">
+
+<head>
+    <meta charset="utf-8" />
     <title>Bharat Radios</title>
+<<<<<<< HEAD
         
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -18,51 +16,98 @@
     <script src="https://code.angularjs.org/2.0.0-beta.0/angular2-polyfills.js"></script>
     <script src="https://code.angularjs.org/2.0.0-beta.0/Rx.js"></script>
     <script src="https://code.angularjs.org/2.0.0-beta.0/angular2.dev.js"></script>
+=======
+    <meta name="description" content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!--[if lt IE 9]>
+    <script src="js/ie/html5shiv.js"></script>
+    <script src="js/ie/respond.min.js"></script>
+    <script src="js/ie/excanvas.js"></script>
+  <![endif]-->
+>>>>>>> reactjs
 
-     <script>
-      System.config({
-        packages: {        
-          app: {
-            format: 'register',
-            defaultExtension: 'js'
-          }
-        }
-      });
-      System.import('app/boot')
-            .catch(console.error.bind(console));
-    </script>
+</head>
 
-  </head>
+<body class="">
+    <section class="vbox">
+        <header class="bg-black lter header header-md navbar navbar-fixed-top-xs">
 
-  <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header">
-            <div class="mdl-layout__header-row">
-                <span class="mdl-layout-title">Bharat Radios</span>
-                <div class="mdl-layout-spacer"></div>
-                <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link" href="">Hindi</a>
-                    <a class="mdl-navigation__link" href="">Tamil</a>
-                    <a class="mdl-navigation__link" href="">Telugu</a>
-                </nav>
+            <div class="navbar-header aside bg-success nav-xs visible-xs">
+                <a class="btn btn-linknavbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+                    <i class="icon-list"></i>
+                </a>
+                <a href="index.html" class="navbar-brand">
+                    <i><img src="assets/images/logos/1_Primary_logo_on_transparent_211X40.png" alt="."></i>
+                </a>
+            </div>
+
+            <div class="navbar-header aside bg-success hidden-xs">
+                <a href="index.html" class="navbar-brand">
+                    <i><img src="assets/images/logos/1_Primary_logo_on_transparent_211X40.png" alt="."></i>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="nav navbar-nav">
+                    <!--<li>
+                        <a href="#">
+                            <span class="font-bold">Hindi</span>
+                        </a>
+                    </li>-->
+                    <li>
+                        <a href="#">
+                            <span class="font-bold">Tamil</span>
+                        </a>
+                    </li>
+                    <!--<li>
+                        <a href="#">
+                            <span class="font-bold">Telugu</span>
+                        </a>
+                    </li>-->
+
+                </ul>
+
+                <!--<form class="navbar-form navbar-left input-s-lg m-t m-l-n-xs hidden-xs" role="search">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-sm bg-white btn-icon"><i class="fa fa-search"></i></button>
+                            </span>
+                            <input type="text" class="form-control input-sm no-border" placeholder="Search radios">
+                        </div>
+                    </div>
+                </form>-->
+                <div class="navbar-right ">
+                    <!--<ul class="nav navbar-nav m-n hidden-xs">
+                        <li>
+                            <a href="#">F</a>
+                        </li>
+                        <li>
+                            <a href="#">g+</a>
+                        </li>
+                        <li>
+                            <a href="#">pin</a>
+                        </li>
+                    </ul>-->
+                </div>
             </div>
         </header>
-    <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">Bharat Radios</span>
-        <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Hindi</a>
-        <a class="mdl-navigation__link" href="">Tamil</a>
-        <a class="mdl-navigation__link" href="">Telugu</a>
-        </nav>
-    </div>
-    <main class="mdl-layout__content">
-        <div class="container">
-            <app-shell>Loading...</app-shell>
-<div class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
-</div>
-      
-            </div>
-    </main>
-    </div>
-  </body>
+        <section>
+            <section class="hbox stretch">
+
+                <section id="content">
+                    <div class="vbox" id="mountnode"></div>
+                </section>
+            </section>
+        </section>
+    </section>
+    <!--<script src="jspm_packages/system.src.js"></script>
+    <script src="config.js"></script>
+    <script>
+        System.import("app/boot");
+    </script>-->
+    <script src="app.bundle.sfx.js" type="text/javascript"></script>
+</body>
+
 </html>

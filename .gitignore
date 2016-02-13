@@ -1,1 +1,7 @@
 node_modules
+<<<<<<< HEAD
+=======
+jspm_packages
+app/**/*.js
+app/**/*.js.map
+>>>>>>> reactjs

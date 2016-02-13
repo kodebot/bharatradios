@@ -14,27 +14,20 @@
  * limitations under the License.
  */
 
-body {
-  margin: 0;
+
+/* JPlayer settings start */
+
+.jp-volume{
+	width: 100px !important;
 }
 
-/* Disable ugly boxes around images in IE10 */
-a img{
-  border: 0px;
-}
-
-.text-center{
-    text-align: center;
-}
-
-.container{
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-.mdl-progress{
-    width:960px;
-}
+/* JPlayer settings end */
 
 
+  .hbox > app-shell {
+    display: table-cell;
+    vertical-align: top;
+    height: 100%;
+    float: none;
+  }
 
