@@ -1,7 +1,0 @@
-MultipleErrors: C:/Users/vmani/AppData/Local/.jspm/packages/npm/browserify@13.0.0/test/error_code/src.js:2:5: Unexpected token var
-C:/Users/vmani/AppData/Local/.jspm/packages/npm/browserify@13.0.0/test/error_code/src.js:2:7: Unexpected token =
-C:/Users/vmani/AppData/Local/.jspm/packages/npm/browserify@13.0.0/test/error_code/src.js:2:9: Semi-colon expected
-
-MultipleErrors: C:/Users/vmani/AppData/Local/.jspm/packages/npm/browserify@13.0.0/test/syntax_cache/invalid.js:2:5: Unexpected token var
-C:/Users/vmani/AppData/Local/.jspm/packages/npm/browserify@13.0.0/test/syntax_cache/invalid.js:2:7: Unexpected token =
-C:/Users/vmani/AppData/Local/.jspm/packages/npm/browserify@13.0.0/test/syntax_cache/invalid.js:2:9: Semi-colon expected

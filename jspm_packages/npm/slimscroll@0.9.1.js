@@ -1,1 +1,0 @@
-module.exports = require("npm:slimscroll@0.9.1/index.js");

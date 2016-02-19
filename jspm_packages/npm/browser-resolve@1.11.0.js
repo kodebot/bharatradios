@@ -1,1 +1,0 @@
-module.exports = require("npm:browser-resolve@1.11.0/index.js");

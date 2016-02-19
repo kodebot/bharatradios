@@ -1,1 +1,0 @@
-module.exports = require("npm:buffer@4.3.0/index.js");
