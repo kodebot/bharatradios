@@ -1,0 +1,124 @@
+/* common variables start */
+/* common variables end */
+/* colors - variable start*/
+/* colors - variables end */
+.btn {
+  border-radius: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.padd {
+  padding: 10px;
+}
+.margin {
+  margin: 10px;
+}
+ul.main-list {
+  list-style-type: none;
+  background-color: #3B3C36;
+  padding: 0;
+  margin: 10px;
+}
+.active {
+  background: #ee5f5b !important;
+  color: #fff;
+}
+.player {
+  position: fixed;
+  width: 100%;
+  padding: 20px;
+  margin-top: 56px;
+  background: #3A3F44;
+  z-index: 9999;
+  box-shadow: 0 0 5px 1px #000;
+}
+.player span {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.player-control.player-control-active {
+  color: #ee5f5b;
+}
+.player-control:hover {
+  color: #ee5f5b;
+  cursor: pointer;
+}
+.player-volume-bar {
+  background-color: #3B3C36;
+  width: 150px;
+  height: 10px;
+  display: inline-block;
+  margin-bottom: 5px;
+  padding:0;
+  text-align: left;
+}
+.player-volume-bar:hover {
+  cursor: pointer;
+}
+.player-volume-bar-value {
+  background-color: #ee5f5b;
+  width: 100px;
+  height: 8px;
+  display: inline-block;
+  margin-bottom: 6px;
+  padding:0;
+}
+.main-list li {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px ridge #000;
+}
+.main-list li:hover {
+  background: #ee5f5b !important;
+  color: #fff;
+  cursor: pointer;
+}
+.i-2x {
+  font-size: 2em;
+}
+li.active {
+  background: #ee5f5b !important;
+  color: #fff;
+}
+li.active a {
+  background: #ee5f5b !important;
+  color: #fff;
+}
+nav {
+  font-weight: bold;
+}
+nav a:hover {
+  background: #ee5f5b !important;
+  color: #fff;
+}
+.content {
+  position: relative;
+  padding-top: 120px;
+  margin: auto;
+}
+footer {
+  bottom: 0;
+  text-align: center;
+  background: #3A3F44;
+  box-shadow: 0 0 2px 1px #000;
+}
+.muted {
+  font-size: x-small;
+  color: grey !important;
+}
+
+.center{
+    text-align: center;
+}
+
+.main-text{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding-bottom:8px;
+}
+
+.jp-volume{
+    text-align: left;
+}
+

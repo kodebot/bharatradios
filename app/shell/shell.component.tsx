@@ -3,9 +3,9 @@
 import React from "react";
 import {render} from "react-dom";
 
+import {NavigationComponent} from "../navigation/navigation.component";
 import {PlayerComponent} from "../player/player.component";
 import {RadioListComponent} from "../radio/radio-list.component";
-import {CurrentlyPlayingComponent} from "../currently-playing/currently-playing.component";
 import {AudioPlayerService} from "../player/audioPlayerService";
 
 export class ShellComponent extends React.Component<any, any> implements React.ComponentLifecycle<any, any>{
@@ -65,54 +65,35 @@ export class ShellComponent extends React.Component<any, any> implements React.C
     }
 
     render() {
-        var adStyle = {
-            "display": "inline-block",
-            width: "300px",
-            height: "600px"
-        };
         return (
-            <section className="vbox bg-black lt">
-                <section className="w-f-md">
-                    <section className="hbox stretch bg-black dker">
-                        <section className="col-sm-2 no-padder lt">
-                            <section className="vbox">
-                                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <section>
+                <NavigationComponent/>
+                <PlayerComponent onPreviousOrNext={this.previousOrNextSelected.bind(this) }/>
+                <div className="content">
+                    <div className="row">
+                        <div className="col-md-3 hidden-sm hidden-xs">
+                            this is sidebar
+                        </div>
 
-                                <div className="adsbygoogle" style={adStyle}
-                                    data-ad-client="ca-pub-3040799023438032"
-                                    data-ad-slot="5454002702"></div>
-                                <script>
-                                    (adsbygoogle = window.adsbygoogle ||[]).push({});
-                                </script>
-                            </section>
-                        </section>
-                        <section className="col-sm-6 no-padder bg">
-                            <section className=" bg-success dker">
-                                <PlayerComponent onPreviousOrNext={this.previousOrNextSelected.bind(this) }/>
-                            </section>
-                            <section className="vbox">
-                                <section className="scrollable hover  w-f-md">
-                                    <RadioListComponent onRadioChange={this.updateCurrentlyPlaying.bind(this) } radios={this.state.radios}/>
-                                </section>
-                            </section>
-                        </section>
-                        <section className="col-sm-2 no-padder lt">
-                            <section className="vbox">
-
-                            </section>
-                        </section>
-                    </section>
-                </section>
-                <footer className="text-white">
-                    DISCLAIMER: BharatRadios does not host any radios, it simply provides links to the radios hosted in the internet.
-                    If you are owner of the radio and you don't want BharatRadios to provide link to your radio then please send an email to the address below.
-                    <br/>
-                    Qubits Solutions Ltd | mailto:qubitssolutionsltd@outlook.com
+                        <div className="col-md-6 col-xs-10 col-xs-offset-1 col-md-offset-0">
+                            <RadioListComponent onRadioChange={this.updateCurrentlyPlaying.bind(this) } radios={this.state.radios}/>
+                        </div>
+                        <div className="col-md-3 hidden-sm hidden-xs">
+                            this is sidebar 2
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div>
+                        &copy; Qubits Solutions Ltd.2016
+                    </div>
+                    <div className="muted">
+                        DISCLAIMER: We don't host any radios listed here. The radios listed here are publically available in the internet and we simple list them here for easy access. If you are the ower of a radio and don't want us to show your radio here, then contact us to remove your radio.
+                    </div>
                 </footer>
-            </section >
-
+            </section>
         );
     }
 }
 
-render(<ShellComponent/>, document.getElementById("mountnode"));
+render(<ShellComponent/>, document.getElementById("mount-node"));
