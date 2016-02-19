@@ -72,14 +72,14 @@ export class ShellComponent extends React.Component<any, any> implements React.C
                 <div className="content">
                     <div className="row">
                         <div className="col-md-3 hidden-sm hidden-xs">
-                            this is sidebar
+                            
                         </div>
 
                         <div className="col-md-6 col-xs-10 col-xs-offset-1 col-md-offset-0">
                             <RadioListComponent onRadioChange={this.updateCurrentlyPlaying.bind(this) } radios={this.state.radios}/>
                         </div>
                         <div className="col-md-3 hidden-sm hidden-xs">
-                            this is sidebar 2
+                            
                         </div>
                     </div>
                 </div>
