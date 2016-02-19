@@ -1,3 +1,13 @@
 node_modules
-jspm_packages
+!jspm_packages/
+jspm_packages/*
+!jspm_packages/npm
+
+jspm_packages/npm/*
+!jspm_packages/npm/font-awesome@4.5.0
+
+jspm_packages/npm/font-awesome@4.5.0/*
+!jspm_packages/npm/font-awesome@4.5.0/fonts
+
+
 
