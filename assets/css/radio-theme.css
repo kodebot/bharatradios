@@ -92,10 +92,19 @@ nav a:hover {
   background: #ee5f5b !important;
   color: #fff;
 }
-.content {
-  position: relative;
-  padding-top: 120px;
-  margin: auto;
+
+ .content {
+    position: relative;
+    padding-top: 120px;
+    margin: auto;
+    }
+    
+@media screen and (max-width:992px){
+    .content {
+    position: relative;
+    padding-top: 180px;
+    margin: auto;
+    }
 }
 footer {
   bottom: 0;
