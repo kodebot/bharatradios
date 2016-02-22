@@ -27,34 +27,43 @@ export class PlayerComponent extends React.Component<any, any>{
                             <div className="jp-interface">
                                 <div className="jp-controls center">
                                     <div className="col-md-4">
-                                        <span>
-                                            <i onClick={this.previous.bind(this) } className="fa fa-backward fa-2x player-control jp-previous"></i>
-                                        </span>
+                                        <div className="row">
+                                            <div className="col-xs-4">
+                                                <span>
+                                                    <i onClick={this.previous.bind(this) } className="fa fa-backward fa-2x player-control jp-previous"></i>
+                                                </span>
+                                            </div>
+                                            <div className="col-xs-4">
+                                                <span>
+                                                    <i className="fa fa-play fa-2x player-control jp-play"></i>
+                                                    <i className="fa fa-stop fa-2x player-control jp-pause"></i>
+                                                </span>
+                                            </div>
+                                            <div className="col-xs-4">
 
-                                        <span>
-                                            <i className="fa fa-play fa-2x player-control jp-play"></i>
-                                            <i className="fa fa-stop fa-2x player-control jp-pause"></i>
-                                        </span>
-
-                                        <span>
-                                            <i onClick={this.next.bind(this) } className="fa fa-forward fa-2x player-control jp-next"></i>
-                                        </span>
+                                                <span>
+                                                    <i onClick={this.next.bind(this) } className="fa fa-forward fa-2x player-control jp-next"></i>
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className="col-md-4">
+                                    <div className="col-md-4 padd-top">
                                         <span className="jp-title main-text">
                                         </span>
                                     </div>
 
                                     <div className="col-md-4">
-                                        <span>
-                                            <i className="fa fa-volume-up fa-2x player-control jp-mute"></i>
-                                            <i className="fa fa-volume-off fa-2x player-control jp-unmute"></i>
-                                            <span className="jp-volume">
-                                                <span className="player-volume-bar jp-volume-bar">
-                                                    <span className="player-volume-bar-value jp-volume-bar-value"></span>
+
+                                            <span>
+                                                <i className="fa fa-volume-up fa-2x player-control jp-mute"></i>
+                                                <i className="fa fa-volume-off fa-2x player-control jp-unmute"></i>
+                                                <span className="jp-volume">
+                                                    <span className="player-volume-bar jp-volume-bar">
+                                                        <span className="player-volume-bar-value jp-volume-bar-value"></span>
+                                                    </span>
                                                 </span>
                                             </span>
-                                        </span>
+                      
                                     </div>
 
                                 </div>

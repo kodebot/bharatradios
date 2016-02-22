@@ -49,6 +49,27 @@ export class ShellComponent extends React.Component<any, any> implements React.C
         this._audioPlayerService.play(radio.streamUrl, radio.name);
     }
 
+    getAdContainer() {
+        const adContainer = document.createElement("div");
+        const script = document.createElement("script");
+        script.src = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+        script.async = true;
+        adContainer.appendChild(script);
+
+        const ins = document.createElement("ins");
+        ins.setAttribute("class", "adsbygoogle");
+        ins.setAttribute("style", "display:inline-block;width:300px;height:600px");
+        ins.setAttribute("data-ad-client", "ca-pub-3809588371499381");
+        ins.setAttribute("data-ad-slot", "5632083753");
+        adContainer.appendChild(ins);
+
+        const script1 = document.createElement("script");
+        script1.innerText = "(adsbygoogle =window.adsbygoogle || []).push({})";
+
+        adContainer.appendChild(script1);
+        return adContainer;
+    }
+
     componentDidMount() {
         $.get("https://raw.githubusercontent.com/vmanikandan001/Vaanoli/master/list.json")
             .done(data => {
@@ -62,6 +83,14 @@ export class ShellComponent extends React.Component<any, any> implements React.C
             .fail(error => {
                 console.log(error);
             });
+
+
+        var adHostRight = document.getElementById("right-ad");
+        var adHostLeft = document.getElementById("left-ad");
+
+        adHostRight.appendChild(this.getAdContainer());
+        adHostLeft.appendChild(this.getAdContainer());
+
     }
 
     render() {
@@ -70,16 +99,18 @@ export class ShellComponent extends React.Component<any, any> implements React.C
                 <NavigationComponent/>
                 <PlayerComponent onPreviousOrNext={this.previousOrNextSelected.bind(this) }/>
                 <div className="content">
-                    <div className="row">
+                    <div className="row no-margin-left no-margin-right">
                         <div className="col-md-3 hidden-sm hidden-xs">
-                            
+                            <div id="left-ad" className="fixed-ad-left">
+                            </div>
                         </div>
 
                         <div className="col-md-6 col-xs-12">
                             <RadioListComponent onRadioChange={this.updateCurrentlyPlaying.bind(this) } radios={this.state.radios}/>
                         </div>
                         <div className="col-md-3 hidden-sm hidden-xs">
-                            
+                            <div id="right-ad" className="fixed-ad-right">
+                            </div>
                         </div>
                     </div>
                 </div>

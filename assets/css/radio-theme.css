@@ -29,7 +29,7 @@ ul.main-list {
   padding: 20px;
   margin-top: 56px;
   background: #3A3F44;
-  z-index: 9999;
+  z-index: 2;
   box-shadow: 0 0 5px 1px #000;
 }
 .player span {
@@ -45,7 +45,7 @@ ul.main-list {
 }
 .player-volume-bar {
   background-color: #3B3C36;
-  width: 150px;
+  width: 70%;
   height: 10px;
   display: inline-block;
   margin-bottom: 5px;
@@ -57,12 +57,13 @@ ul.main-list {
 }
 .player-volume-bar-value {
   background-color: #ee5f5b;
-  width: 100px;
+  width: 70%;
   height: 8px;
   display: inline-block;
   margin-bottom: 6px;
   padding:0;
 }
+
 .main-list li {
   font-size: 1.25em;
   font-weight: bold;
@@ -131,3 +132,29 @@ footer {
     text-align: left;
 }
 
+.padd-top{
+    padding-top: 10px;
+}
+
+.fixed-ad-left{
+    position:fixed;
+    padding-top:30px;
+    left:5px;
+    z-index:-1;
+    
+}
+
+.fixed-ad-right{
+    position:fixed;
+    padding-top:30px;
+    right: 5px;
+    z-index: -1;
+}
+
+.no-margin-left{
+    margin-left: 0;
+}
+
+.no-margin-right{
+    margin-right:0;
+}
