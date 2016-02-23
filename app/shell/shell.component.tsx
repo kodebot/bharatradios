@@ -100,15 +100,15 @@ export class ShellComponent extends React.Component<any, any> implements React.C
                 <PlayerComponent onPreviousOrNext={this.previousOrNextSelected.bind(this) }/>
                 <div className="content">
                     <div className="row no-margin-left no-margin-right">
-                        <div className="col-md-3 hidden-sm hidden-xs">
+                        <div className="col-md-3 col-lg-2 col-lg-offset-2 col-md-offset-0 hidden-sm hidden-xs">
                             <div id="left-ad" className="fixed-ad-left">
                             </div>
                         </div>
 
-                        <div className="col-md-6 col-xs-12">
+                        <div className="col-md-6 col-lg-4 col-xs-12">
                             <RadioListComponent onRadioChange={this.updateCurrentlyPlaying.bind(this) } radios={this.state.radios}/>
                         </div>
-                        <div className="col-md-3 hidden-sm hidden-xs">
+                        <div className="col-md-3 col-lg-2 hidden-sm hidden-xs">
                             <div id="right-ad" className="fixed-ad-right">
                             </div>
                         </div>

@@ -54,16 +54,16 @@ export class PlayerComponent extends React.Component<any, any>{
 
                                     <div className="col-md-4">
 
-                                            <span>
-                                                <i className="fa fa-volume-up fa-2x player-control jp-mute"></i>
-                                                <i className="fa fa-volume-off fa-2x player-control jp-unmute"></i>
-                                                <span className="jp-volume">
-                                                    <span className="player-volume-bar jp-volume-bar">
-                                                        <span className="player-volume-bar-value jp-volume-bar-value"></span>
-                                                    </span>
+                                        <span>
+                                            <i className="fa fa-volume-up fa-2x player-control jp-mute"></i>
+                                            <i className="fa fa-volume-off fa-2x player-control jp-unmute"></i>
+                                            <span className="jp-volume">
+                                                <span className="player-volume-bar jp-volume-bar">
+                                                    <span className="player-volume-bar-value jp-volume-bar-value"></span>
                                                 </span>
                                             </span>
-                      
+                                        </span>
+
                                     </div>
 
                                 </div>

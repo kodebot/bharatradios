@@ -27,7 +27,7 @@ ul.main-list {
   position: fixed;
   width: 100%;
   padding: 20px;
-  margin-top: 56px;
+  margin-top: 52px;
   background: #3A3F44;
   z-index: 2;
   box-shadow: 0 0 5px 1px #000;
@@ -64,13 +64,19 @@ ul.main-list {
   padding:0;
 }
 
-.main-list li {
+.main-list li{
+      border-bottom: 1px ridge #000;
+}
+
+.main-list li .radio{
   font-size: 1.25em;
   font-weight: bold;
   padding: 10px;
-  border-bottom: 1px ridge #000;
+  vertical-align:top;
+  margin: 0 0 0 50px;
 }
-.main-list li:hover {
+
+.main-list li .radio:hover{
   background: #ee5f5b !important;
   color: #fff;
   cursor: pointer;
@@ -157,4 +163,18 @@ footer {
 
 .no-margin-right{
     margin-right:0;
+}
+
+.avatar{
+    float:left;
+    margin-right:10px;
+    height:43px;
+    width:45px;
+    color:#fff;
+    font-weight: bolder;
+    border-radius:30px;
+    text-align: center;
+    font-size: 1.25em;
+    padding-top:10px;
+    background-color: #ee5f5b;
 }
