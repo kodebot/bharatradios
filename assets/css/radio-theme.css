@@ -13,12 +13,6 @@
 .margin {
   margin: 10px;
 }
-ul.main-list {
-  list-style-type: none;
-  background-color: #3B3C36;
-  padding: 0;
-  margin: 10px;
-}
 .active {
   background: #ee5f5b !important;
   color: #fff;
@@ -26,16 +20,25 @@ ul.main-list {
 .player {
   position: fixed;
   width: 100%;
-  padding: 20px;
+  padding: 5px;
   margin-top: 52px;
   background: #3A3F44;
   z-index: 2;
-  box-shadow: 0 0 5px 1px #000;
+  box-shadow: 0 0 5px 1px #222;
 }
 .player span {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.player-control{
+  padding:5px;
+  min-width: 40px;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px outset #555;
+}
+
 .player-control.player-control-active {
   color: #ee5f5b;
 }
@@ -44,28 +47,38 @@ ul.main-list {
   cursor: pointer;
 }
 .player-volume-bar {
-  background-color: #3B3C36;
-  width: 70%;
-  height: 10px;
+  background-color: #F3CC29;
+  max-width: 50%;
+  width:50%;
+  height: 16px;
   display: inline-block;
-  margin-bottom: 5px;
-  padding:0;
+  padding:0 !important;
   text-align: left;
+  border: 1px inset #FFCC29;
 }
 .player-volume-bar:hover {
   cursor: pointer;
 }
 .player-volume-bar-value {
   background-color: #ee5f5b;
-  width: 70%;
-  height: 8px;
+  height: 15px;
+  max-width: 100%;
   display: inline-block;
-  margin-bottom: 6px;
-  padding:0;
+  border: 2px outset #ff5f5b;
+}
+
+ul.main-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px;
 }
 
 .main-list li{
-      border-bottom: 1px ridge #000;
+    border-bottom: 1px ridge #111;
+    background-color: #3B3C36;
+    box-shadow: 0 1px 3px 0 #111;
+    margin:5px;
+    border-radius: 15px;
 }
 
 .main-list li .radio{
@@ -80,6 +93,8 @@ ul.main-list {
   background: #ee5f5b !important;
   color: #fff;
   cursor: pointer;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .i-2x {
   font-size: 2em;
@@ -102,14 +117,14 @@ nav a:hover {
 
  .content {
     position: relative;
-    padding-top: 120px;
+    padding-top: 100px;
     margin: auto;
     }
     
-@media screen and (max-width:992px){
+@media screen and (max-width:767px){
     .content {
     position: relative;
-    padding-top: 180px;
+    padding-top: 177px;
     margin: auto;
     }
 }
